@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Tree Viewer</title>
+    </head>
+    <body>
+        <h1>JSON Tree Viewer</h1>
+        <input type="file" id="json-file" onchange="fillJsonSection(); fillJsonTree();" />
+        <div id="json-section">
+            <textarea id="json-text" rows="30" cols="80" readonly></textarea>
+        </div>
+        </div>
+        <p>The current line is <span id="current-line"></span></p>
+        <div id="tree-section">
+        </div>
+        <script src="./src/tree_viewer.jsx"></script>
+    </body>
+</html>
